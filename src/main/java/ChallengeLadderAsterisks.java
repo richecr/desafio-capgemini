@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * Classe que possui a solução da Questão 1
+ */
 public class ChallengeLadderAsterisks {
 
     public static void main(String[] args) {

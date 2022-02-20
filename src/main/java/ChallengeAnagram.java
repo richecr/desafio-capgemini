@@ -1,5 +1,8 @@
 import java.util.*;
 
+/**
+ * Classe que possui a solução da Questão 3
+ */
 public class ChallengeAnagram {
 
     public static void main(String[] args) {
@@ -8,6 +11,12 @@ public class ChallengeAnagram {
         System.out.println(countAnagrams(word));
     }
 
+    /**
+     * Método que irá contar a quantidade pares de substrings que são anagramas.
+     *
+     * @param word Palavra a ser verificada.
+     * @return Quantidade de pares.
+     */
     public static long countAnagrams(String word) {
         Map<Integer, List<String>> map = getAllSequences(word);
         List<List<String>> sequences = new ArrayList<>(map.values());

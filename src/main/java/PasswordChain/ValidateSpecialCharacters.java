@@ -3,6 +3,9 @@ package PasswordChain;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Classe que é responsável por validar a palavra de ter pelo menos um caractere especial.
+ */
 public class ValidateSpecialCharacters extends AbstractHandler {
 
     @Override

@@ -1,5 +1,10 @@
 package PasswordChain;
 
+/**
+ * Classe abstrata que representa os handler para validações.
+ *
+ * Todas as classes de validações devem estender dessa.
+ */
 public abstract class AbstractHandler implements ValidatePasswordChain {
 
     private ValidatePasswordChain nextValidatePassword;

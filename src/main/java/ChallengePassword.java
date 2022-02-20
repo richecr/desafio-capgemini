@@ -2,6 +2,9 @@ import PasswordChain.*;
 
 import java.util.Scanner;
 
+/**
+ * Classe que possui a solução da Questão 1
+ */
 public class ChallengePassword {
 
     public static void main(String[] args) {
@@ -10,6 +13,15 @@ public class ChallengePassword {
         System.out.println(verifyPassword(word));
     }
 
+    /**
+     * Método que irá verificar se a palavra obdece as regras impostas.
+     * Utilizei o padrão de projeto Chain of Responsibility.
+     *
+     * Onde é setado todas as validações que a palavra será submetida.
+     *
+     * @param word Palavra a ser verificada.
+     * @return caracteres a serem adicionados.
+     */
     public static int verifyPassword(String word) {
         ValidateTiny validateTiny = new ValidateTiny();
         ValidateDigit validateDigit = new ValidateDigit();
